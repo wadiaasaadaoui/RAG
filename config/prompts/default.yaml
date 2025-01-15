@@ -1,0 +1,33 @@
+qa_default: |
+    Context: {context}
+    
+    Question: {question}
+    
+    Instructions:
+    1. Analyze the context carefully
+    2. Provide a clear and concise answer
+    3. Only use information from the context
+    4. If the context doesn't contain enough information, say so
+    
+    Answer:
+
+search_default: |
+    Given the following question:
+    {question}
+    
+    Generate a search query that will help find relevant information.
+    Focus on key terms and concepts.
+    
+    Search query:
+
+validation_default: |
+    Question: {question}
+    Context: {context}
+    Response: {response}
+    
+    Validate the response based on:
+    1. Accuracy relative to context
+    2. Completeness of answer
+    3. Relevance to question
+    
+    Validation result:
